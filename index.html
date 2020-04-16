@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Form validation using Javascript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!-- Linking stylesheet -->
+	<link rel="stylesheet" href="style.css"/>
+	<!-- Linking Javascript file -->
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+	<!-- Header part -->
+	<header>
+		<p class="logo">Logo</p>
+	</header>
+	<!-- Conatiner -->
+	<div class="container">
+		<div class="form_card">
+			<!-- Form -->
+			<form method="post" name="form" onsubmit="return validate()">
+				<div class="inpbox">
+					<label>Full Name:</label><br>
+					<input type="text" name="name">
+					<p class="error" id="name_error"></p>
+				</div>
+				<div class="inpbox">
+					<label>Email:</label><br>
+					<input type="text" name="email">
+					<p class="error" id="email_error"></p>
+				</div>
+				<div class="inpbox">
+					<label>Password:</label><br>
+					<input type="password" name="password">
+					<p class="error" id="pass_error"></p>
+				</div>
+				<div class="inpbox">
+					<input type="submit" value="Sign Up">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
